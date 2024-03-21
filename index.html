@@ -19,7 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -28,12 +28,14 @@
     <!-- Header -->
     <section>
         <div class="container-fluid header">
-            <div class="row">
-                <div class="col-6 col-md-4 header_logo">
+            <div class="row d-md-flex d-none">
+                <div class="col-5 col-md-4 header_logo">
                     <div class="px-5">
                         <img class="img-fluid" src="assets/image/logo.png">
                     </div>
                 </div>
+
+                <div class="col-md-1"></div>
                 <div class="col-md-6">
                     <div class="row d-none d-md-block">
                         <ul class="nav justify-content-end bg-white social-nav">
@@ -89,6 +91,16 @@
                     </div>
                 </div>
             </div>
+            <div class="d-flex d-md-none">
+                <div class="col-5 p-2 px-3">
+                    <img class="img-fluid header-mobile-logo" src="assets/image/mobile-logo.png">
+                </div>
+                <div class="col-7 p-2 d-flex justify-content-end align-items-center">
+                    <div>
+                        <button class="btn mr-button">Contact Us</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -96,7 +108,14 @@
     <section>
         <div class="container-fluid banner">
             <div class="container">
-                <div class="row h-100 d-flex">
+                <div class="row h-100 d-flex mt-2 mt-md-0">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="content">
+                            <h1 class="title text-white">Start learning with us to fly high!</h1>
+                            <p class="text-white my-4">We, MMIN have inclusive nursing educational infrastructure. Take admission and catch your dream career with us.</p>
+                            <button class="btn mr-button d-none d-md-block">EXPLORE OUR COURSES</button>
+                        </div>
+                    </div>
                     <div class="col-md-6 d-flex justify-content-center align-items-center">
                         <div class="card card-form mt-2">
                             <div class="card-body">
@@ -138,13 +157,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="content">
-                            <h1 class="title text-white">Grow yourself <br> with us for better <br> Future</h1>
-                            <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                            <button class="btn mr-button">EXPLORE OUR COURSES</button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -157,32 +169,29 @@
                 <div class="row justify-content-between">
                     <div class="col-md-6">
                         <h2 class="title">About Us</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                        <p>We, Mother Mary Institute of Nursing have established a milestone in the nursing education industry with our quality approach, constant research, and innovative development. We have created a model study approach in this nursing education as one of the best nursing institutes in India. We always teach our students to be responsible caregivers and become a devotee as nursing professionals with ethical standard maintenance.</p>
                         <span class="d-flex"><i class="fa fa-circle me-3 mt-1" style="color:#0D63AC;"></i>
-                            <p class="round">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <p class="round">To provide the best aspect to the students, we always provide standard nursing education both theoretically and practically.</p>
                         </span>
                         <span class="d-flex"><i class="fa fa-circle me-3 mt-1" style="color:#0D63AC;"></i>
-                            <p class="round">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <p class="round">Practical approaches at our laboratory provide great mileage to students in their future employment.</p>
                         </span>
                         <span class="d-flex"><i class="fa fa-circle me-3 mt-1" style="color:#0D63AC;"></i>
-                            <p class="round">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <p class="round">We have 6 months of internship programming to provide hands-on job experience and make students professionally experienced.</p>
                         </span>
                         <button class="btn mr-button">EXPLORE OUR COURSES</button>
                     </div>
-                    <div class="col-md-5 d-flex align-items-end">
+                    <div class="col-md-5 mt-md-0 mt-4 d-flex align-items-end">
                         <div class="row">
-                            <div class="col-md-6 d-flex flex-column justify-content-between">
+                            <div class="col-6 d-flex flex-column justify-content-between">
                                 <img class="img-fluid" src="assets/image/img-4.png">
-                                <div class="stats py-2">
+                                <div class="stats mt-2 mt-md-0 py-md-2 py-1">
                                     <div>
-                                        <h2 class="title">230k+ <br> Students</h2>
+                                        <h2 class="stats-title title">230k+ <br> Students</h2>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-6">
                                 <img class="img-fluid" src="assets/image/img-5.png">
                             </div>
                         </div>
@@ -225,12 +234,15 @@
             <div class="row mr-section">
                 <div class="col-md-6 message">
                     <h2 class="title">Director Message</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+
+                    <img class="img-fluid d-block d-md-none my-3" src="assets/image/img/director.jpg">
+                    
+                    <p>Bidding hearty welcome to all, it’s my pleasure that, presently Mother Mary Institute of Nursing is a model nursing educational institute with its professional aspects. For students, health is a field where the employment scope is huge. It’s my pleasure that, we have tie-ups with many hospitals and nursing homes for student nurses’ placement. Here financial incapability will not restrict you from education because we have many facilities also. I always inspire my students to learn nursing for serving rural India.</p>
+                    <p>Still in our country, 64% of rural persons are died from a lack of medical treatment. It's my hope that all our students will be spread across the country and they will save millions of people's life.</p>
                     <button class="mr-button btn btn-lg">EXPLORE OUR COURSES</button>
                 </div>
-                <div class="col-md-6">
-                    <img class="img-fluid" src="assets/image/img-1.png">
+                <div class="col-md-6 d-none d-md-block">
+                    <img class="img-fluid" src="assets/image/img/director.jpg">
                 </div>
             </div>
         </div>
@@ -248,114 +260,107 @@
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="accordion-no">01</span> <span class="faq-question">Lorem Ipsum is
-                                                simply dummy text of the printing and typesetting industry?</span>
+                                            <span class="accordion-no">01</span> <span class="faq-question">Is there any installment facility for paying fees?
+                                            </span>
                                         </button>
                                     </div>
                                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is shown by
-                                            default, until the collapse plugin adds the appropriate classes
-                                            <code>.accordion-body</code>, though the transition does limit overflow.
+                                            You can deposit your fees in two to three installments. We have the motto to design courses where financial obstruction does not hamper students' training.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="accordion-no">02</span> <span class="faq-question">Lorem Ipsum is
-                                                simply dummy text of the printing and typesetting industry?</span>
+                                            <span class="accordion-no">02</span> <span class="faq-question">How to take admission to Mother Mary Institute of Nursing?
+                                            </span>
                                         </button>
                                     </div>
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is shown by
-                                            default, until the collapse plugin adds the appropriate classes
-                                            <code>.accordion-body</code>, though the transition does limit overflow.
+                                            Please DM at the provided what’s App or calling number. Our executives will tell you about further processes.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="accordion-no">03</span> <span class="faq-question">Lorem Ipsum is
-                                                simply dummy text of the printing and typesetting industry?</span>
+                                            <span class="accordion-no">03</span> <span class="faq-question">Is there any campus recruitment facility?
+                                            </span>
                                         </button>
                                     </div>
                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is shown by
-                                            default, until the collapse plugin adds the appropriate classes
-                                            <code>.accordion-body</code>, though the transition does limit overflow.
+                                            Every year we conduct campus recruitment activities where students get ample scope for their employment.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="accordion-no">04</span> <span class="faq-question">Lorem Ipsum is
-                                                simply dummy text of the printing and typesetting industry?</span>
+                                            <span class="accordion-no">04</span> <span class="faq-question">May I get an academic counseling facility?</span>
                                         </button>
                                     </div>
                                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is shown by
-                                            default, until the collapse plugin adds the appropriate classes
-                                            <code>.accordion-body</code>, though the transition does limit overflow.
-
+                                            We have academic counselors who will guide you about course selection, professional grooming, and others.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="accordion-no">05</span> <span class="faq-question">Lorem Ipsum is
-                                                simply dummy text of the printing and typesetting industry?</span>
+                                            <span class="accordion-no">05</span> <span class="faq-question">For nursing is there an internship system after course completion?
+                                            </span>
                                         </button>
                                     </div>
                                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is shown by
-                                            default, until the collapse plugin adds the appropriate classes
-                                            <code>.accordion-body</code>, though the transition does limit overflow.
-
+                                            After completion of the course, there is an internship for 6 months. Here students get the scope for gathering practical experiences.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="accordion-no">06</span> <span class="faq-question">Lorem Ipsum is
-                                                simply dummy text of the printing and typesetting industry?</span>
+                                            <span class="accordion-no">06</span> <span class="faq-question">Are there facilities for extra-curricular activities?                                            </span>
                                         </button>
                                     </div>
                                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is shown by
-                                            default, until the collapse plugin adds the appropriate classes
-                                            <code>.accordion-body</code>, though the transition does limit overflow.
-
+                                            We have made a gym, wi-fi space, and playing activities for making our student's overall development.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="accordion-no">07</span> <span class="faq-question">Lorem Ipsum is
-                                                simply dummy text of the printing and typesetting industry?</span>
+                                            <span class="accordion-no">07</span> <span class="faq-question">Is there any hostel facility?
+                                            </span>
                                         </button>
                                     </div>
                                     <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is shown by
-                                            default, until the collapse plugin adds the appropriate classes
-                                            <code>.accordion-body</code>, though the transition does limit overflow.
+                                            We have a hostel facility for our students. In the hostel, they will be disciplined enough.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseOne">
+                                            <span class="accordion-no">08</span> <span class="faq-question">May I get the scope for professional development here?</span>
+                                        </button>
+                                    </div>
+                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            We have a separate department to provide students with professional grooming.
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="text-end pb-5">
+                        <div class="text-end pb-5 d-none d-md-block">
                             <button class="btn mr-button">CALL US</button>
                         </div>
                     </div>
@@ -371,25 +376,25 @@
     <section>
         <div class="container-fluid testimonials">
             <div class="container mr-section">
+                <h2 class="title text-white my-2 text-center">Testimonials</h2>
                 <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-fluid" src="assets/image/avatar-1.png">
+                    <div class="col-md-4 mb-3 text-center">
+                        <img class="img-fluid avatar mb-2" src="assets/image/avatar-1.png">
+                        <h4 class="text-dark d-block d-md-none" style="font-weight: bold;">JONE SMITH</h4>
                     </div>
                     <div class="col-md-8 d-flex justify-content-center align-items-center">
                         <div class="row">
                             <div class="col-md-2">
-                                <img class="img-fluid" src="assets/image/vector-1.png">
+                                <img class="img-fluid blockquote" src="assets/image/vector-1.png">
                             </div>
                             <div class="col-md-8">
-                                <div class="py-5">
-                                    <h2 class="title text-white">Testimonials</h2>
-                                    <h4 class="text-dark" style="font-weight: bold;">JONE SMITH</h4>
-                                    <h4 class="text-dark">Designations</h4>
+                                <div class="py-2 py-md-5">
+                                    <h4 class="text-dark d-md-block d-none" style="font-weight: bold;">JONE SMITH</h4>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
                                 </div>
                             </div>
-                            <div class="col-md-2 d-flex align-items-end">
-                                <img class="img-fluid" src="assets/image/vector-2.png">
+                            <div class="col-md-2 d-flex align-items-end justify-content-end">
+                                <img class="img-fluid blockquote" src="assets/image/vector-2.png">
                             </div>
                         </div>
                     </div>
@@ -402,36 +407,68 @@
     <section>
         <div class="container-fluid mr-section blog">
             <div class="container">
-                <h2 class="title text-center">Our Blogs</h2>
+                <h2 class="title text-center mb-3">Our Blogs</h2>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card border-0 shadow">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/image/blog-1.png">
-                                <span class="blog-time">23<br>Mar</span>
-                                <h4 class="title my-4">Arndlord packages overcame distance smallest.</h4>
-                                <p class="blog-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div class="swiper blogSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-0">
+                            <div class="card border-0 shadow">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="assets/image/blog-1.png">
+                                    <span class="blog-time">23<br>Mar</span>
+                                    <h4 class="title my-4">Arndlord packages overcame distance smallest.</h4>
+                                    <p class="blog-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card border-0 shadow">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/image/blog-2.png">
-                                <span class="blog-time">23<br>Mar</span>
-                                <h4 class="title my-4">Arndlord packages overcame distance smallest.</h4>
-                                <p class="blog-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="swiper-slide p-0">
+                            <div class="card border-0 shadow">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="assets/image/blog-1.png">
+                                    <span class="blog-time">23<br>Mar</span>
+                                    <h4 class="title my-4">Arndlord packages overcame distance smallest.</h4>
+                                    <p class="blog-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card border-0 shadow">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/image/blog-3.png">
-                                <span class="blog-time">23<br>Mar</span>
-                                <h4 class="title my-4">Arndlord packages overcame distance smallest.</h4>
-                                <p class="blog-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="swiper-slide p-0">
+                            <div class="card border-0 shadow">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="assets/image/blog-1.png">
+                                    <span class="blog-time">23<br>Mar</span>
+                                    <h4 class="title my-4">Arndlord packages overcame distance smallest.</h4>
+                                    <p class="blog-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-0">
+                            <div class="card border-0 shadow">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="assets/image/blog-1.png">
+                                    <span class="blog-time">23<br>Mar</span>
+                                    <h4 class="title my-4">Arndlord packages overcame distance smallest.</h4>
+                                    <p class="blog-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-0">
+                            <div class="card border-0 shadow">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="assets/image/blog-1.png">
+                                    <span class="blog-time">23<br>Mar</span>
+                                    <h4 class="title my-4">Arndlord packages overcame distance smallest.</h4>
+                                    <p class="blog-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-0">
+                            <div class="card border-0 shadow">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="assets/image/blog-1.png">
+                                    <span class="blog-time">23<br>Mar</span>
+                                    <h4 class="title my-4">Arndlord packages overcame distance smallest.</h4>
+                                    <p class="blog-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -446,29 +483,29 @@
             <div class="container">
                 <h2 class="title text-center">Life at College</h2>
                 <div class="row py-4">
-                    <div class="col-md-3">
-                        <img class="img-fluid" src="assets/image/gimg-1.png">
+                    <div class="col-md-3 mb-4">
+                        <img class="img-fluid" src="assets/image/img/gal1.jpg">
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <img class="img-fluid" src="assets/image/img/gal2.jpg">
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <img class="img-fluid" src="assets/image/img/gal3.jpg">
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <img class="img-fluid" src="assets/image/img/gal4.jpg">
                     </div>
                     <div class="col-md-3">
-                        <img class="img-fluid" src="assets/image/gimg-2.png">
+                        <img class="img-fluid" src="assets/image/img/gal5.jpg">
                     </div>
                     <div class="col-md-3">
-                        <img class="img-fluid" src="assets/image/gimg-3.png">
+                        <img class="img-fluid" src="assets/image/img/gal6.jpg">
                     </div>
                     <div class="col-md-3">
-                        <img class="img-fluid" src="assets/image/gimg-4.png">
+                        <img class="img-fluid" src="assets/image/img/gal7.jpg">
                     </div>
                     <div class="col-md-3">
-                        <img class="img-fluid" src="assets/image/gimg-5.png">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="img-fluid" src="assets/image/gimg-6.png">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="img-fluid" src="assets/image/gimg-7.png">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="img-fluid" src="assets/image/gimg-8.png">
+                        <img class="img-fluid" src="assets/image/img/gal8.jpg">
                     </div>
                 </div>
             </div>
@@ -477,38 +514,57 @@
 
     <!-- Our Colleges -->
     <section>
-        <div class="container-fluid mr-section our-recognize">
+        <div class="container-fluid mr-section our-recognize college">
             <div class="container">
-                <h2 class="title text-center py-5">Our Colleges</h2>
+                <h2 class="title text-center pb-5">Our Colleges</h2>
                 <div class="partner-wrapper">
                     <div class="partner-track">
                         <div class="partner">
-                            <img src="assets/image/college-1.png" class="img-fluid d-md-block d-none">
-                            <img src="assets/image/college-1.png" class="img-fluid d-block d-md-none">
+                            <img src="/assets/image/colleges/M R COLLEGE OF PARAMEDICAL.png" class="img-fluid">
+                           
                         </div>
                         <div class="partner">
-                            <img src="assets/image/college-2.png" class="img-fluid d-md-block d-none">
-                            <img src="assets/image/college-2.png" class="img-fluid d-block d-md-none">
+                            <img src="/assets/image/colleges/M R INSTITUTE OF NURSING.png" class="img-fluid">
+                          
                         </div>
                         <div class="partner">
-                            <img src="assets/image/college-1.png" class="img-fluid d-md-block d-none">
-                            <img src="assets/image/college-1.png" class="img-fluid d-block d-md-none">
+                            <img src="/assets/image/colleges/MOTEHR TERESA PHARMA.png" class="img-fluid">
+                           
                         </div>
                         <div class="partner">
-                            <img src="assets/image/college-2.png" class="img-fluid d-md-block d-none">
-                            <img src="assets/image/college-2.png" class="img-fluid d-block d-md-none">
+                            <img src="/assets/image/colleges/MOTHER MARY OF NURSING.png" class="img-fluid">
+                           
                         </div>
                         <div class="partner">
-                            <img src="assets/image/college-1.png" class="img-fluid d-md-block d-none">
-                            <img src="assets/image/college-1.png" class="img-fluid d-block d-md-none">
+                            <img src="/assets/image/colleges/MOTHER RIJIYA OF NURSING.png" class="img-fluid">
+                          
                         </div>
                         <div class="partner">
-                            <img src="assets/image/college-2.png" class="img-fluid d-md-block d-none">
-                            <img src="assets/image/college-2.png" class="img-fluid d-block d-md-none">
+                            <img src="/assets/image/colleges/MOTHER TERESA OF EDUCATION.png" class="img-fluid">
+                          
                         </div>
                         <div class="partner">
-                            <img src="assets/image/college-1.png" class="img-fluid d-md-block d-none">
-                            <img src="assets/image/college-1.png" class="img-fluid d-block d-md-none">
+                            <img src="/assets/image/colleges/MOTHER TERESA OF NURSING.png" class="img-fluid">
+                           
+                        </div>
+                        <div class="partner">
+                            <img src="/assets/image/colleges/MR COLLEGE OF EDUCATION.png" class="img-fluid">
+                            
+                        </div>
+                        <div class="partner">
+                            <img src="/assets/image/colleges/MR COLLEGE OF PHARMA.png" class="img-fluid">
+                            
+                        </div>
+                        <div class="partner">
+                            <img src="/assets/image/colleges/SAHAJPATH PHARMACY.png" class="img-fluid">
+                           
+                        </div>
+                        <div class="partner">
+                            <img src="/assets/image/colleges/sahajpath.png" class="img-fluid">
+                           
+                        </div>
+                        <div class="partner">
+                            <img src="/assets/image/colleges/SHAHIDULLA INSTITUTE OF EDUCATION.png" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -518,7 +574,7 @@
 
     <!-- Our Vission and Mission -->
     <section>
-        <div class="container-fluid target">
+        <div class="container-fluid target mr-section pb-0">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-md-6 d-flex align-items-center">
@@ -557,9 +613,9 @@
         <div class="container map">
             <div class="row">
                 <div class="col-md-6 text-end p-0">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14736.998555186465!2d88.31039613001177!3d22.569764712946206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02782b4b85236b%3A0xf930670bfb37fe43!2sAvani%20Riverside%20Mall!5e0!3m2!1sen!2sin!4v1685264093067!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14736.998555186465!2d88.31039613001177!3d22.569764712946206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02782b4b85236b%3A0xf930670bfb37fe43!2sAvani%20Riverside%20Mall!5e0!3m2!1sen!2sin!4v1685264093067!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col-md-6 logo-container text-start p-0">
+                <div class="col-md-6 logo-container text-start p-0 d-none d-md-flex">
                     <img class="img-fluid" src="assets/image/logo-1.png">
                 </div>
             </div>
@@ -570,10 +626,10 @@
     <section>
         <div class="container-fluid py-4 brochure">
             <div class="row">
-                <div class="col-6 d-flex justify-content-end align-items-center">
+                <div class="col-md-6 d-flex justify-content-end align-items-center">
                     <h4 class="title mb-0">Download Our Broucher</h4>
                 </div>
-                <div class="col-6 d-flex justify-content-start align-items-start">
+                <div class="col-md-6 d-flex justify-content-start align-items-start my-4 my-md-0">
                     <button class="mr-button btn btn-lg mt-2">DOWNLOAD NOW</button>
                 </div>
             </div>
@@ -594,9 +650,6 @@
                                 <a class="nav-link" href="#">ABOUT US</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">NOTICE</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#">COURSES</a>
                             </li>
                             <li class="nav-item">
@@ -615,25 +668,24 @@
                             <div class="col-md-1 mb-3 mb-md-0 text-center">
                                 <img class="img-fluid contact-icon" src="assets/image/icon-location.png">
                             </div>
-                            <div class="col-md-3">
-                                <p class="text-white text-center">Lorem Ipsum Address<br>
-                                    Block 134, D3<br>
-                                    D123wer</p>
+                            <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                                <p class="text-white">Nadibagh, Kazipara, Ps- Madhyamgram, Kolkata-700125</p>
                             </div>
+                            
         
                             <div class="col-md-1 mb-3 mb-md-0 text-center">
                                 <img class="img-fluid contact-icon" src="assets/image/icon-call.png">
                             </div>
-                            <div class="col-md-3 text-center">
-                                <p class="text-white">+91 123 45 67 89 00</p>
+                            <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                                <a href="tel:+919734090090"><p class="text-white">+91 973-409-0090</p></a>
                             </div>
         
         
                             <div class="col-md-1 mb-3 mb-md-0 text-center">
                                 <img class="img-fluid contact-icon" src="assets/image/icon-email.png">
                             </div>
-                            <div class="col-md-3 text-center">
-                                <p class="text-white">info.mrcollege.com</p>
+                            <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                                <a href="mailto:mminkolkata@gmail.com"><p class="text-white">mminkolkata@gmail.com</p></a>
                             </div>
                         </div>
                     </div>
@@ -642,23 +694,62 @@
             </div>
         </footer>
         <div class="copyright">
-            <p class="text-center text-white mb-0">© 2023 MR College All Rights Reserved.</p>
+            <p class="text-center text-white mb-0">© 2024 MR College All Rights Reserved.</p>
         </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.4.slim.js"
     integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".blogSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 50,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                infinity: true
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 2,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 3,
+                }
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

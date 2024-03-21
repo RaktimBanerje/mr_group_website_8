@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 .title {
     color: #0D63AC;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 2.5rem;
 }
 
 p {
@@ -44,7 +44,7 @@ p {
 }
 
 .mr-section-1 {
-    padding: 60px 0px 0px 0px;
+    padding: 0x 0px 0px 0px;
 }
 
 /* Header */
@@ -53,7 +53,7 @@ p {
     clip-path: polygon(0% 0%, 100% 0%, 91.6% 100%, 0% 100%);
 }
 .header .menu .nav-item .nav-link {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     color: black;
     border-bottom: 2px solid white;
@@ -69,7 +69,7 @@ p {
 .banner {
     padding-top: 10px;
     padding-bottom: 50px;
-    background-image: url(../image/banner.png);
+    background-image: url(../image/img/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,7 +86,7 @@ p {
 }
 
 .banner .title {
-    font-size: 60px;
+    font-size: 3.5rem;
 } 
 
 .banner label {
@@ -124,7 +124,7 @@ p {
 }
 .text-contact-title {
  font-family: 'Times New Roman', Times, serif;
- font-size: 40px;
+ font-size: 2.5rem;
  font-weight: 700;
 }
 .block_img_contact {
@@ -147,6 +147,7 @@ top: -27px;
 .block_contact_body {
     padding-left: 60px;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 .main_body_contact div i {
     font-size: 30px;
@@ -169,6 +170,96 @@ top: -27px;
     width: 250px;
     height: 80px;
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-pagination-bullet {
+    background-color: #FFFFFF;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #FFFFFF;
+    right: 10px;
+    padding: 21px;
+    border-radius: 100%;
+    color: black !important;
+    font-weight: bolder;
+    fill: black !important;
+    stroke: black !important;
+    /* border: 1px solid black; */
+    transition: 0.4s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    box-shadow: 0px 0px 20px 0px white;
+    transition: 0.4s;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* Blog */
+.blog {
+    background-color: white;
+}
+
+.blog-description {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.blog-time {
+    background-color: #00AFD7;
+    padding: 10px 12px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 270px;
+    margin-top: -30px;
+}
+
+.blog .title {
+    font-size: 3rem;
+}
+
+.blog .card-body .title {
+    font-size: 1.5rem;
+}
+
 @media (max-width:1399px) {
     .image_contact_col {
     top: -5px;
@@ -238,12 +329,72 @@ top: -27px;
         text-align: center;
     }
     .text-contact-body {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 27px;
     }
     .image_contact_col {
         left: 85px;
     }
+
+    .mr-section {
+        padding: 30px 10px 30px 10px;
+    }
+
+    .mr-button {
+        width: 100%;
+    }
+
+    .banner .title {
+        font-size: 2.5rem;
+        text-align: center;
+    } 
+
+    .banner p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .image_contact_col {
+        display: none;
+    }
+
+    .stats-title {
+        font-size: 1.5rem;
+    }
+
+    .brochure .title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .header-mobile-logo {
+        height: 90px;
+    }
+
+    .avatar {
+        height: 150px;
+    }
+
+    .blockquote {
+        height: 80px;
+    }
+
+    .blog-description {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    footer p {
+        font-size: 18px;
+        text-align: center !important;
+    }
+
+    
+
 }
 @media (max-width:575px) {
     .image_contact_col {
@@ -251,7 +402,7 @@ top: -27px;
         left: 40px;
     }
     .text-contact-title {
-        font-size: 26px;
+        font-size: 2.5rem;
     }
     .text-contact-body {
         width: 80% !important;
@@ -361,30 +512,10 @@ top: -27px;
     background-size: cover;
 }
 
-/* Blog */
-.blog {
-    background-color: white;
-}
 
-.blog-description {
-    font-size: 14px;
-    line-height: 25px;
-}
 
-.blog-time {
-    background-color: #00AFD7;
-    padding: 10px 12px;
-    text-align: center;
-    display: inline-block;
-    color: white;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 10px;
-    margin-top: -30px;
-}
-
-.blog .title {
-    font-size: 24px;
+.college .title {
+    font-size: 3rem;
 }
 
 /* Our College */
@@ -420,7 +551,7 @@ top: -27px;
     }
 
     100% {
-        transform: translateX(calc(-100px * 7));
+        transform: translateX(calc(-100px * 13));
     }
 }
 
@@ -450,11 +581,11 @@ footer {
 footer a {
     color: #898686 !important;
     transition: 0.2s;
-    font-weight: bold;
 }
 
 footer p {
     font-size: 18px;
+    text-align: start;
 }
 
 footer a:hover {
@@ -493,6 +624,10 @@ footer a:hover {
     background-size: cover;
 }
 
+.target .card-body .title {
+    font-size: 2rem;
+}
+
 /* Map */
 .map .logo-container {
     background-color: #00AFD7;
@@ -507,6 +642,10 @@ footer a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.testimonials .title {
+    font-size: 3rem;
 }
 
 .testimonials p {
@@ -540,6 +679,10 @@ footer a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.gallery .title {
+    font-size: 3rem;
 }
 
 /* Director */
